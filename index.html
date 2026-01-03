@@ -31,6 +31,113 @@
   <link rel="stylesheet" href="slick/slick.css" />
   <link rel="stylesheet" href="slick/slick-theme.css" />
   <link rel="stylesheet" href="css/main.css" />
+  <style>
+    /* Tooltip styles for hover definitions */
+    .tooltip {
+      position: relative;
+      display: inline !important;
+      color: rgba(255, 255, 255, 0.7) !important;
+      background: none !important;
+      text-decoration: none !important;
+      cursor: help !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      font-size: inherit !important;
+      font-style: inherit !important;
+      line-height: inherit !important;
+      letter-spacing: inherit !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      border: none !important;
+      border-radius: 0 !important;
+      text-shadow: inherit !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+    }
+    
+    .tooltip:hover {
+      color: rgba(255, 255, 255, 0.9) !important;
+      background: none !important;
+      text-shadow: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      font-size: inherit !important;
+      font-style: inherit !important;
+    }
+    
+    .tooltip::after {
+      content: attr(data-tooltip);
+      position: absolute;
+      bottom: 140%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(0, 0, 0, 0.95);
+      color: white;
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 400;
+      white-space: nowrap;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.4s ease, visibility 0.4s ease;
+      z-index: 9999;
+      pointer-events: none;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      text-shadow: none;
+      min-width: 120px;
+      text-align: center;
+    }
+    
+    .tooltip::before {
+      content: '';
+      position: absolute;
+      bottom: 130%;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 6px solid transparent;
+      border-top-color: rgba(0, 0, 0, 0.95);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.4s ease, visibility 0.4s ease;
+      z-index: 9999;
+    }
+    
+    .tooltip:hover::after,
+    .tooltip:hover::before,
+    .tooltip:active::after,
+    .tooltip:active::before,
+    .tooltip:focus::after,
+    .tooltip:focus::before {
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    /* Mobile touch support */
+    @media (hover: none) and (pointer: coarse) {
+      .tooltip {
+        -webkit-tap-highlight-color: transparent;
+      }
+      
+      .tooltip:active::after,
+      .tooltip:active::before {
+        opacity: 1 !important;
+        visibility: visible !important;
+      }
+    }
+    
+    /* Responsive tooltip positioning */
+    @media (max-width: 480px) {
+      .tooltip::after {
+        bottom: 130%;
+        font-size: 12px;
+        padding: 6px 10px;
+        max-width: 200px;
+        white-space: normal;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -63,9 +170,9 @@
                   class="slide-text-more"> more</span><span class="slide-text-toggle">+</span></p>
               <p class="slide-text slide-text-full">Lan - I was prepping my move to the UK, still in the US, but wanted to make sure
                 I have a cycling buddy as soon as I get there. Naturally, I went on Hinge 🤣. Roy liked my Yosemite bike photo
-                and said "so jealous, do you race btw?". We started chatting late into Roy's midnight zwift session. We
-                followed each other on Strava, as I did need to make sure he was as fit as claimed. On my third day in London, we
-                went on our first date, selected some snacks in Tesco for our second date, which was a ride to Brighton via Box
+                and said "so jealous, do you race btw?". We started chatting late into Roy's midnight <span class="tooltip" data-tooltip="Indoor cycling training platform, where your character rides a virtual 🚲 on virtuals ⛰️">zwift</span> session. We
+                followed each other on <span class="tooltip" data-tooltip="Social network for sports, where your friends can give you 👍 ❤️ for your activities">Strava</span>, as I did need to make sure he was as fit as claimed. On my third day in London, we
+                went on our first date, selected some snacks in the grocery store for our second date, which was a ride to Brighton via Box
                 Hill.<span class="slide-text-toggle">−</span></p>
             </div>
           </div>
@@ -87,7 +194,7 @@
           </div>
         </div>
 
-        <div class="carousel-slide" data-bg="images/assets/grocery.gif">
+        <div class="carousel-slide" data-bg="images/assets/house.gif">
           <div class="text-overlay"></div>
           <div class="slide-content slide-content-right">
             <h2 class="slide-title">Home Sweet Home</h2>
@@ -111,7 +218,7 @@
               data-full="Roy - Roy to fill in his story of how the proposal happened here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
               <p class="slide-text slide-text-preview">Roy - I wanted to propose on one of our hardest days...<span
                   class="slide-text-more"> more</span><span class="slide-text-toggle">+</span></p>
-              <p class="slide-text slide-text-full">Roy - I wanted to propose on one of our hardest days and on top of one of the highest peaks to make the proposal more epic. We finally did pass by a perfect mountain top overlooking the valley and I told Lan I wanted to stop for a bit. Obviously, Lan didn't know my intentions and she immediately sat down and got out a sandwich (woops). So, I had to first tell her to stand up again and put it away before I went on one knee and asked the question. I was both nervous and excited, but I knew I wanted to spend the rest of my life with this girl! also getting on one knee after a week of hiking is hard.
+              <p class="slide-text slide-text-full">Roy - I wanted to propose on one of our hardest days of Tour du Mont Blanc, and on top of one of the highest peaks to make the proposal more epic. We finally did pass by a perfect mountain top overlooking the valley and I told Lan I wanted to stop for a bit. Obviously, Lan didn't know my intentions and she immediately sat down and got out a sandwich (woops). So, I had to first tell her to stand up again and put it away before I went on one knee and asked the question. I was both nervous and excited, but I knew I wanted to spend the rest of my life with this girl! also getting on one knee after a week of hiking is hard.
 p.s. Hiding the ring from Lan was one of the hardest bits as she knew everything going in and out of my backpack.<span class="slide-text-toggle">−</span></p>
             </div>
           </div>

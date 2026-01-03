@@ -1369,8 +1369,8 @@ a:hover {
     background-image: url('../images/assets/vietnam_mobile.jpg') !important;
   }
 
-  .carousel-slide[data-bg="images/assets/grocery.gif"] {
-    background-image: url('../images/assets/grocery_mobile.gif') !important;
+  .carousel-slide[data-bg="images/assets/house.gif"] {
+    background-image: url('../images/assets/house_mobile.png') !important;
   }
 
   .carousel-slide[data-bg="images/assets/proposal.gif"] {
