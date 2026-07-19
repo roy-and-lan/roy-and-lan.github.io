@@ -5,38 +5,128 @@
   <meta charset="utf-8">
   <meta name="generator" content="Hugo 0.42.2" />
   <title>Roy & Lan's Wedding</title>
-  <meta name="description" content="Select your language to view our wedding details" />
+  <meta name="description" content="Join us for our wedding in Hanoi on December 12, 2026" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Roy & Lan's Wedding">
-  <meta property="og:description" content="Select your language to view our wedding details">
+  <meta property="og:description" content="Join us for our wedding in Hanoi on December 12, 2026">
   <meta property="og:image" content="https://roy-and-lan.github.io/images/assets/soho.jpg">
   <meta property="og:url" content="https://roy-and-lan.github.io/">
   
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Roy & Lan's Wedding">
-  <meta name="twitter:description" content="Select your language to view our wedding details">
+  <meta name="twitter:description" content="Join us for our wedding in Hanoi on December 12, 2026">
   <meta name="twitter:image" content="https://roy-and-lan.github.io/images/assets/soho.jpg">
   
   <link rel="icon" type="image/png" href="images/assets/soho.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;800;900&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/main.css" />
+  
   <style>
-    /* Use the same floral background as the main site */
+    :root {
+      --terracotta: #D77C67;
+      --warm-beige: #FBF8F6;
+      --dark-brown: #5B463D;
+      --soft-white: rgba(255, 255, 255, 0.95);
+      --glass-bg: rgba(255, 255, 255, 0.88);
+    }
+    
+    /* Floral background */
     body {
       background: url('images/assets/background.png') no-repeat center center fixed;
       background-size: cover;
       min-height: 100vh;
-      font-family: 'Orbitron', sans-serif;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      color: var(--dark-brown);
     }
     
-    /* Language selector container - centered on page */
+    /* Position floral decorations to frame the card */
+    .floral-decoration {
+      position: fixed;
+      pointer-events: none;
+      z-index: 1;
+      opacity: 0;
+      transition: opacity 0.7s ease;
+    }
+    
+    .floral-top-left {
+      top: 10%;
+      left: 5%;
+      width: 250px;
+      height: 300px;
+      background: url('images/assets/party-left.png') no-repeat center;
+      background-size: contain;
+      animation: fadeIn 0.8s ease 0.2s forwards;
+    }
+    
+    .floral-top-right {
+      top: 8%;
+      right: 3%;
+      width: 220px;
+      height: 280px;
+      background: url('images/assets/party-right.png') no-repeat center;
+      background-size: contain;
+      animation: fadeIn 0.8s ease 0.3s forwards;
+    }
+    
+    .floral-bottom-left {
+      bottom: 15%;
+      left: 8%;
+      width: 200px;
+      height: 250px;
+      background: url('images/assets/party-left.png') no-repeat center;
+      background-size: contain;
+      opacity: 0.7;
+      animation: fadeIn 0.8s ease 0.5s forwards;
+    }
+    
+    .floral-bottom-right {
+      bottom: 12%;
+      right: 5%;
+      width: 240px;
+      height: 220px;
+      background: url('images/assets/party-right.png') no-repeat center;
+      background-size: contain;
+      opacity: 0.7;
+      animation: fadeIn 0.8s ease 0.6s forwards;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(15px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    /* Premium card */
     .language-selector-container {
       display: flex;
       justify-content: center;
@@ -48,118 +138,181 @@
     }
     
     .language-selector {
-      background: rgba(255, 255, 255, 0.92);
-      border-radius: 20px;
-      padding: 3rem 4rem;
+      background: var(--glass-bg);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 24px;
+      padding: 3rem 3.5rem;
       text-align: center;
-      box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
-      max-width: 700px;
-      width: 95%;
-      border: 2px solid rgba(212, 129, 107, 0.3);
+      box-shadow: 0 20px 60px rgba(215, 124, 103, 0.15);
+      max-width: 580px;
+      width: 90%;
+      border: 1px solid rgba(215, 124, 103, 0.2);
+      animation: slideUp 0.8s ease 0.3s forwards;
     }
     
+    /* Typography */
     .language-selector h1 {
-      font-family: 'Orbitron', sans-serif;
-      font-size: 2.8rem;
-      font-weight: 800;
-      color: var(--pink);
-      margin-bottom: 0.5rem;
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.5rem, 6vw, 3.5rem);
+      font-weight: 600;
+      color: var(--terracotta);
+      margin: 0 0 0.5rem;
+      letter-spacing: 1px;
+    }
+    
+    .language-selector .date {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1rem, 2.5vw, 1.25rem);
+      color: var(--terracotta);
+      margin: 0 0 2rem;
       letter-spacing: 3px;
-      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
-    }
-    
-    .language-selector .subtitle {
-      font-family: 'Dancing Script', cursive;
-      font-size: 1.5rem;
-      color: var(--ink);
-      margin-bottom: 2.5rem;
-      display: block;
-    }
-    
-    .language-selector .subtitle-vi {
-      font-size: 1.2rem;
-      color: var(--pink);
-      margin-top: -1rem;
-      font-family: 'Helvetica Neue', Arial, sans-serif;
       font-weight: 400;
     }
     
+    .language-selector .welcome {
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(1rem, 2.2vw, 1.15rem);
+      color: var(--dark-brown);
+      margin: 0 0 0.25rem;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+    
+    .language-selector .welcome-vi {
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(0.95rem, 2vw, 1.05rem);
+      color: var(--dark-brown);
+      margin: 0 0 2.5rem;
+      font-weight: 400;
+      opacity: 0.9;
+    }
+    
+    /* Full-width language buttons */
     .lang-buttons {
       display: flex;
-      gap: 2.5rem;
-      justify-content: center;
-      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
     }
     
     .lang-button {
       display: flex;
-      flex-direction: column;
       align-items: center;
+      gap: 0.75rem;
       text-decoration: none;
-      color: var(--ink);
+      color: var(--dark-brown);
       transition: all 0.3s ease;
-      padding: 1rem 2rem;
-      border-radius: 12px;
+      padding: 1rem 1.5rem;
+      border-radius: 14px;
+      background: var(--soft-white);
+      border: 1px solid rgba(215, 124, 103, 0.15);
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(0.95rem, 2vw, 1.1rem);
+      font-weight: 500;
+      opacity: 0;
+    }
+    
+    .lang-button:nth-child(1) {
+      animation: fadeInUp 0.6s ease 0.7s forwards;
+    }
+    
+    .lang-button:nth-child(2) {
+      animation: fadeInUp 0.6s ease 0.85s forwards;
     }
     
     .lang-button:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 25px rgba(212, 129, 107, 0.4);
-      background: rgba(255, 255, 255, 0.8);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(215, 124, 103, 0.25);
+      background: white;
+      border-color: rgba(215, 124, 103, 0.3);
     }
     
     .lang-button .flag {
-      font-size: 3.5rem;
-      margin-bottom: 0.75rem;
-      text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      font-size: 1.5rem;
     }
     
     .lang-button .label {
-      font-family: 'Orbitron', sans-serif;
-      font-size: 1.1rem;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      color: var(--pink);
-      font-weight: 600;
+      flex: 1;
+      text-align: left;
+      letter-spacing: 0.5px;
     }
     
-    /* Responsive adjustments */
+    /* Personal touch */
+    .personal-touch {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(215, 124, 103, 0.15);
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(0.85rem, 1.9vw, 0.95rem);
+      color: var(--dark-brown);
+      opacity: 0.85;
+      font-style: italic;
+      animation: fadeInUp 0.6s ease 1s forwards;
+      opacity: 0;
+    }
+    
+    /* Responsive */
     @media (max-width: 768px) {
       .language-selector {
-        padding: 2rem 2.5rem;
-        margin: 0 1rem;
+        padding: 2.5rem 2rem;
+        max-width: 520px;
       }
       
       .language-selector h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
       }
       
-      .language-selector .subtitle {
-        font-size: 1.2rem;
+      .floral-top-left {
+        top: 8%;
+        left: 3%;
+        width: 180px;
       }
       
-      .lang-buttons {
-        gap: 1.5rem;
+      .floral-top-right {
+        top: 6%;
+        right: 2%;
+        width: 160px;
       }
       
-      .lang-button .flag {
-        font-size: 2.8rem;
+      .floral-bottom-left {
+        bottom: 12%;
+        left: 5%;
+        width: 150px;
+      }
+      
+      .floral-bottom-right {
+        bottom: 10%;
+        right: 3%;
+        width: 180px;
       }
     }
     
     @media (max-width: 480px) {
       .language-selector {
-        padding: 1.5rem;
-        border-radius: 15px;
+        padding: 2rem 1.5rem;
+        border-radius: 20px;
+        width: 94%;
       }
       
       .language-selector h1 {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
       }
       
-      .lang-buttons {
-        flex-direction: column;
-        gap: 1rem;
+      .language-selector .date {
+        font-size: 1rem;
+        letter-spacing: 2px;
+      }
+      
+      .floral-top-left,
+      .floral-top-right,
+      .floral-bottom-left,
+      .floral-bottom-right {
+        display: none;
+      }
+      
+      .lang-button {
+        padding: 1rem;
       }
     }
     
@@ -171,11 +324,19 @@
 </head>
 
 <body>
+  <!-- Floral decorations -->
+  <div class="floral-decoration floral-top-left"></div>
+  <div class="floral-decoration floral-top-right"></div>
+  <div class="floral-decoration floral-bottom-left"></div>
+  <div class="floral-decoration floral-bottom-right"></div>
+  
   <div class="language-selector-container">
     <div class="language-selector">
       <h1>ROY & LAN</h1>
-      <span class="subtitle">Select Your Language</span>
-      <span class="subtitle-vi">Vui lòng chọn ngôn ngữ</span>
+      <p class="date">12 . 12 . 2026</p>
+      
+      <p class="welcome">Welcome to our wedding website</p>
+      <p class="welcome-vi">Chào mừng đến với trang web đám cưới của chúng tôi</p>
       
       <div class="lang-buttons">
         <a href="en/" class="lang-button">
@@ -187,6 +348,8 @@
           <span class="label">Tiếng Việt</span>
         </a>
       </div>
+      
+      <p class="personal-touch">We can't wait to celebrate with you.</p>
     </div>
   </div>
 
