@@ -58,12 +58,11 @@ body {
   display: none;
 }
 
-/* Apply background to all content after carousel */
-.main-content>section:not(.carousel-section) {
+/* Apply floral background to main content container */
+.main-content {
   background: url('../images/assets/background.png') no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
-  position: relative;
 }
 
 /* Main content container - fluid design */
@@ -72,7 +71,6 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  background: transparent;
   border-radius: 0;
   box-shadow: none;
   position: relative;
@@ -325,12 +323,24 @@ body {
 /* ===== WEDDING TIMELINE STYLES ===== */
 
 .order-of-day-section {
-  padding: 100px 20px;
-  background: linear-gradient(135deg, #fdf8f5 0%, #f5ebe6 50%, #fdf8f5 100%);
+  padding: 80px 20px 60px;
   margin: 0 auto;
   min-height: 100vh;
   position: relative;
   overflow: hidden;
+  background: transparent;
+}
+
+.order-of-day-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(253, 248, 245, 0.7) 0%, rgba(245, 235, 230, 0.7) 50%, rgba(253, 248, 245, 0.7) 100%);
+  pointer-events: none;
+  z-index: 0;
 }
 
 /* Decorative background pattern */
@@ -479,7 +489,7 @@ body {
 /* Responsive adjustments for timeline */
 @media (max-width: 768px) {
   .order-of-day-section {
-    padding: 50px 15px;
+    padding: 60px 15px 40px;
     min-height: auto;
   }
 
@@ -521,7 +531,7 @@ body {
 
 @media (max-width: 480px) {
   .order-of-day-section {
-    padding: 40px 10px;
+    padding: 40px 10px 30px;
     min-height: auto;
   }
 
@@ -1994,15 +2004,28 @@ a:hover {
 
 /* FAQ Section Styles */
 .faq-section {
-  padding: 100px 20px;
-  background: linear-gradient(180deg, #fff 0%, #f8f5f2 100%);
+  padding: 80px 20px 60px;
   text-align: center;
   position: relative;
   overflow: hidden;
+  background: transparent;
+}
+
+/* Gradient overlay */
+.faq-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(248, 245, 242, 0.7) 100%);
+  pointer-events: none;
+  z-index: 0;
 }
 
 /* Decorative elements */
-.faq-section::before {
+.faq-section::after {
   content: '';
   position: absolute;
   top: -100px;
@@ -2010,17 +2033,6 @@ a:hover {
   width: 300px;
   height: 300px;
   background: radial-gradient(circle, rgba(143, 179, 214, 0.1) 0%, transparent 70%);
-  pointer-events: none;
-}
-
-.faq-section::after {
-  content: '';
-  position: absolute;
-  bottom: -50px;
-  left: -50px;
-  width: 200px;
-  height: 200px;
-  background: radial-gradient(circle, rgba(212, 129, 107, 0.08) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -2153,7 +2165,7 @@ a:hover {
 /* Responsive adjustments for FAQ */
 @media (max-width: 768px) {
   .faq-section {
-    padding: 60px 15px;
+    padding: 60px 15px 40px;
   }
 
   .faq-title {
@@ -2193,7 +2205,7 @@ a:hover {
 
 @media (max-width: 480px) {
   .faq-section {
-    padding: 50px 10px;
+    padding: 40px 10px 30px;
   }
 
   .faq-item {
@@ -2227,14 +2239,14 @@ a:hover {
 
 /* ===== RSVP Section Styles ===== */
 .rsvp-section {
-  padding: 100px 20px;
-  background: linear-gradient(135deg, #f5ebe6 0%, #fdf8f5 50%, #e8f0f5 100%);
+  padding: 80px 20px 60px;
   text-align: center;
   position: relative;
   overflow: hidden;
+  background: transparent;
 }
 
-/* Decorative background */
+/* Gradient overlay + Decorative background */
 .rsvp-section::before {
   content: '';
   position: absolute;
@@ -2242,10 +2254,12 @@ a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image:
+  background: 
+    linear-gradient(135deg, rgba(245, 235, 230, 0.7) 0%, rgba(253, 248, 245, 0.7) 50%, rgba(232, 240, 245, 0.7) 100%),
     radial-gradient(circle at 10% 20%, rgba(212, 129, 107, 0.06) 0%, transparent 40%),
     radial-gradient(circle at 90% 80%, rgba(143, 179, 214, 0.08) 0%, transparent 40%);
   pointer-events: none;
+  z-index: 0;
 }
 
 /* Decorative hearts */
@@ -2377,7 +2391,7 @@ a:hover {
 /* Responsive adjustments for RSVP */
 @media (max-width: 768px) {
   .rsvp-section {
-    padding: 40px 15px;
+    padding: 60px 15px 40px;
   }
 
   .rsvp-section::after {
@@ -2420,7 +2434,7 @@ a:hover {
 
 @media (max-width: 480px) {
   .rsvp-section {
-    padding: 30px 10px;
+    padding: 40px 10px 30px;
   }
 
   .rsvp-section::after {

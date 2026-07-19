@@ -1,0 +1,515 @@
+<!doctype html>
+<html style="scroll-behavior: smooth;">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="Hugo 0.42.2" />
+  <title> Roy &amp; Lan </title>
+  <meta name="description" content="Join us for our wedding in Hanoi on December 12, 2026" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Roy & Lan's Wedding">
+  <meta property="og:description" content="Join us for our wedding in Hanoi on December 12, 2026">
+  <meta property="og:image" content="https://roy-and-lan.github.io/images/assets/soho.jpg">
+  <meta property="og:url" content="https://roy-and-lan.github.io/en/">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Roy & Lan's Wedding">
+  <meta name="twitter:description" content="Join us for our wedding in Hanoi on December 12, 2026">
+  <meta name="twitter:image" content="https://roy-and-lan.github.io/images/assets/soho.jpg">
+  
+  <link rel="icon" type="image/png" href="../images/assets/soho.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;800;900&family=Dancing+Script:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+  <link rel="stylesheet" href="../slick/slick.css" />
+  <link rel="stylesheet" href="../slick/slick-theme.css" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <style>
+    /* Tooltip styles for hover definitions */
+    .tooltip {
+      position: relative;
+      display: inline !important;
+      color: rgba(255, 255, 255, 0.7) !important;
+      background: none !important;
+      text-decoration: none !important;
+      cursor: help !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      font-size: inherit !important;
+      font-style: inherit !important;
+      line-height: inherit !important;
+      letter-spacing: inherit !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      border: none !important;
+      border-radius: 0 !important;
+      text-shadow: inherit !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+    }
+    
+    .tooltip:hover {
+      color: rgba(255, 255, 255, 0.9) !important;
+      background: none !important;
+      text-shadow: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      font-size: inherit !important;
+      font-style: inherit !important;
+    }
+    
+    .tooltip::after {
+      content: attr(data-tooltip);
+      position: absolute;
+      bottom: 140%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(0, 0, 0, 0.95);
+      color: white;
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 400;
+      white-space: nowrap;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.4s ease, visibility 0.4s ease;
+      z-index: 9999;
+      pointer-events: none;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      text-shadow: none;
+      min-width: 120px;
+      text-align: center;
+    }
+    
+    .tooltip::before {
+      content: '';
+      position: absolute;
+      bottom: 130%;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 6px solid transparent;
+      border-top-color: rgba(0, 0, 0, 0.95);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.4s ease, visibility 0.4s ease;
+      z-index: 9999;
+    }
+    
+    .tooltip:hover::after,
+    .tooltip:hover::before,
+    .tooltip:active::after,
+    .tooltip:active::before,
+    .tooltip:focus::after,
+    .tooltip:focus::before {
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    /* Mobile touch support */
+    @media (hover: none) and (pointer: coarse) {
+      .tooltip {
+        -webkit-tap-highlight-color: transparent;
+      }
+      
+      .tooltip:active::after,
+      .tooltip:active::before {
+        opacity: 1 !important;
+        visibility: visible !important;
+      }
+    }
+    
+    /* Responsive tooltip positioning */
+    @media (max-width: 480px) {
+      .tooltip::after {
+        bottom: 130%;
+        font-size: 12px;
+        padding: 6px 10px;
+        max-width: 200px;
+        white-space: normal;
+      }
+    }
+    
+    /* Decorative elements - same as FAQ for travel section */
+    #travel-section::before {
+      content: '';
+      position: absolute;
+      top: -100px;
+      right: -100px;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(143, 179, 214, 0.1) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    #travel-section::after {
+      content: '';
+      position: absolute;
+      bottom: -50px;
+      left: -50px;
+      width: 200px;
+      height: 200px;
+      background: radial-gradient(circle, rgba(212, 129, 107, 0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    /* Custom styles for travel section to match FAQ but with different content */
+    #travel-section .faq-answer {
+      line-height: 1.7;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Decorative watercolor elements -->
+  <div class="watercolor-decoration"></div>
+  <div class="watercolor-decoration"></div>
+
+  <div class="main-content">
+
+    <!-- Love Story Carousel -->
+    <section class="carousel-section">
+      <div class="carousel-container">
+        <div class="carousel-slide active" data-bg="../images/assets/running.gif">
+          <div class="slide-content hero-style">
+            <p class="invitation-text">See you in Hanoi!</p>
+            <h1 class="couples-names">ROY & Lan</h1>
+            <p class="wedding-date">12 . 12 . 2026</p>
+            <p class="wedding-location">Pan Pacific Hanoi, 1 Thanh Niên, Hà Nội</p>
+          </div>
+        </div>
+
+        <div class="carousel-slide" data-bg="../images/assets/cycling_goat.gif">
+          <div class="text-overlay"></div>
+          <div class="slide-content">
+            <h2 class="slide-title">Where Love Began</h2>
+            <div class="slide-text-wrapper"
+              data-full="Lan - I wanted to find a cycling buddy before moving to the UK, so I joined Hinge. (By chance) I posted a cycling photo from Yosemite, Roy liked it and asked 'so jealous, do you race normally?' That's how we started chatting. We followed each other on Strava to make sure he was real. On our first date in London, we went grocery shopping for snacks for our second date, which was a cycling trip to Brighton via Box Hill.">
+              <p class="slide-text slide-text-preview">Lan - I wanted to find a cycling buddy before moving to the UK...<span
+                  class="slide-text-more"> more</span><span class="slide-text-toggle">+</span></p>
+              <p class="slide-text slide-text-full">Lan - I wanted to find a cycling buddy before moving to the UK, so I joined Hinge. (By chance) I posted a cycling photo from Yosemite, Roy liked it and asked "so jealous, do you race normally?" That's how we started chatting. We followed each other on Strava to make sure he was real. On our first date in London, we went grocery shopping for snacks for our second date, which was a cycling trip to Brighton via Box Hill.<span class="slide-text-toggle">−</span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-slide" data-bg="../images/assets/vietnam.gif">
+          <div class="text-overlay"></div>
+          <div class="slide-content slide-content-right">
+            <h2 class="slide-title">Adventures in Vietnam</h2>
+            <div class="slide-text-wrapper"
+              data-full="Roy - I was warmly welcomed by Lan's family and friends in Vietnam. One time, Lan's mom took me on her motorbike to buy bun cha for lunch. She and the vendor gave me so many bags that I had to hold with both hands, and there was no hand left to hold onto the bike - almost fell off! 😅">
+              <p class="slide-text slide-text-preview">Roy - Warmly welcomed by Lan's family and friends in Vietnam...<span
+                  class="slide-text-more"> more</span><span class="slide-text-toggle">+</span></p>
+              <p class="slide-text slide-text-full">Roy - I was warmly welcomed by Lan's family and friends in Vietnam. One time, Lan's mom took me on her motorbike to buy bun cha for lunch. She and the vendor gave me so many bags that I had to hold with both hands, and there was no hand left to hold onto the bike - almost fell off! 😅<span class="slide-text-toggle">−</span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-slide" data-bg="../images/assets/house.gif">
+          <div class="text-overlay"></div>
+          <div class="slide-content slide-content-right">
+            <h2 class="slide-title">Our first home</h2>
+            <div class="slide-text-wrapper"
+              data-full="Lan - In September 2024, we bought our first home together. After dozens of hours assembling furniture and repainting rooms, dozens of small drill holes in the walls, and finally our little nest was complete.">
+              <p class="slide-text slide-text-preview">Lan - In September 2024, we bought our first home together...<span
+                  class="slide-text-more"> more</span><span class="slide-text-toggle">+</span></p>
+              <p class="slide-text slide-text-full">Lan - In September 2024, we bought our first home together. After dozens of hours assembling furniture and repainting rooms, dozens of small drill holes in the walls, and finally our little nest was complete. <span class="slide-text-toggle">−</span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-slide" data-bg="../images/assets/proposal.gif">
+          <div class="text-overlay"></div>
+          <div class="slide-content">
+            <h2 class="slide-title">The Proposal</h2>
+            <div class="slide-text-wrapper"
+              data-full="Roy - I wanted to propose during one of our toughest days on the Tour du Mont Blanc, at the top of a high peak to make it more epic. We finally reached a perfect mountaintop overlooking the valley and I told Lan I wanted to stop for a bit. Of course, Lan didn't know my intentions and immediately sat down and took out a sandwich. So I had to tell her to stand up first, put it away, then I went on one knee and asked the question. I was nervous and excited, but I knew I wanted to spend my life with this girl! Also, getting on one knee after a week of hiking is hard.">
+              <p class="slide-text slide-text-preview">Roy - I wanted to propose during one of our toughest days...<span
+                  class="slide-text-more"> more</span><span class="slide-text-toggle">+</span></p>
+              <p class="slide-text slide-text-full">Roy - I wanted to propose during one of our toughest days on the Tour du Mont Blanc, at the top of a high peak to make it more epic. We finally reached a perfect mountaintop overlooking the valley and I told Lan I wanted to stop for a bit. Of course, Lan didn't know my intentions and immediately sat down and took out a sandwich. So I had to tell her to stand up first, put it away, then I went on one knee and asked the question. I was nervous and excited, but I knew I wanted to spend my life with this girl! Also, getting on one knee after a week of hiking is hard.<span class="slide-text-toggle">−</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <div class="carousel-nav">
+        <button class="nav-btn prev-btn" onclick="changeSlide(-1)">‹</button>
+        <button class="nav-btn next-btn" onclick="changeSlide(1)">›</button>
+      </div>
+
+      <!-- Dots indicator -->
+      <div class="carousel-dots">
+        <span class="dot active" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+
+      <!-- Top Navigation (Desktop Only) -->
+      <div class="top-nav-container">
+        <div class="top-nav-left">
+          <a href="#timeline-section" class="nav-link">Timeline</a>
+          <a href="#faq-section" class="nav-link">FAQs</a>
+          <a href="#travel-section" class="nav-link">Travel Recs</a>
+        </div>
+        <div class="top-nav-right">
+          <a href="#rsvp-section" class="rsvp-button-overlay">RSVP</a>
+          <a href="../vn/" class="lang-link" style="margin-left: 15px; color: rgba(255,255,255,0.9); text-decoration: none; font-size: 24px;">🇻🇳</a>
+        </div>
+      </div>
+
+      <!-- Particle effects background -->
+      <div class="particles"></div>
+    </section>
+
+    <!-- Order of the Day -->
+    <section id="timeline-section" class="order-of-day-section">
+      <div class="order-container">
+        <h2 class="order-title">Wedding Timeline</h2>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-time">9:30</div>
+            <div class="timeline-icon">🎆</div>
+            <div class="timeline-event">Tea Ceremony at Bride's Home</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-time">11:30</div>
+            <div class="timeline-icon">💍</div>
+            <div class="timeline-event">Wedding Ceremony</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-time">12:00</div>
+            <div class="timeline-icon">🍽️</div>
+            <div class="timeline-event">Lunch Reception</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-time">13:30</div>
+            <div class="timeline-icon">🥂</div>
+            <div class="timeline-event">Karaoke + Games</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-time">14:30</div>
+            <div class="timeline-icon">🎂</div>
+            <div class="timeline-event">Chè Buffet + More Singing!</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-time">15:30</div>
+            <div class="timeline-icon">🚗</div>
+            <div class="timeline-event">Home time!</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RSVP Section -->
+    <section id="rsvp-section" class="rsvp-section">
+      <h2 class="rsvp-title">RSVP</h2>
+      <p class="rsvp-subtitle">Please let us know if you will be attending our special day ❤️</p>
+
+      <div class="rsvp-form-container">
+        <div style="width:100%;height:500px;" data-fillout-id="kd5oRuAWnhus" data-fillout-embed-type="standard"
+          data-fillout-inherit-parameters data-fillout-dynamic-resize></div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq-section" class="faq-section">
+      <h2 class="faq-title">Frequently Asked Questions</h2>
+
+      <div class="faq-container">
+        <div class="faq-item">
+          <h3 class="faq-question">What is the RSVP deadline?</h3>
+          <p class="faq-answer">Please register for yourself and your plus one by 12/11/2026!</p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">What should I wear?</h3>
+          <p class="faq-answer">Wear formal, glamorous yet comfortable outfits. If you have a pink/orange/red outfit, please rock them asap. White/ivory is reserved for the bride.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">Are there options for my dietary requirements?</h3>
+          <p class="faq-answer">Of course! When filling out the form, please let us know if you have any dietary restrictions or are vegetarian.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">What time should I arrive?</h3>
+          <p class="faq-answer">Please arrive before 11:30 at Pan Pacific. If you wish to attend the tea ceremony, please contact us/Lan's parents directly! Our place is just a 5-minute walk from the wedding venue.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">How should I get there?</h3>
+          <p class="faq-answer">Depending on where you're coming from, you can take the bus, motorbike taxi (Grab), or regular taxi. Please leave early as Hanoi traffic can be heavy, and Lan doesn't like being late.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">Do we have any gift ideas?</h3>
+          <p class="faq-answer">You already made the trip, no need for gifts (can always sing us a karaoke song)! We will have a card box available at the venue if you bring one!</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Hanoi Travel Recs Section -->
+    <section id="travel-section" class="faq-section">
+      <h2 class="faq-title">Hanoi Travel Recs</h2>
+      
+      <div class="faq-container">
+        <div class="faq-item">
+          <h3 class="faq-question">Where should I stay?</h3>
+          <p class="faq-answer">Staying close to the Old Quarter is the easiest for exploring Hanoi. Airbnb options are very affordable, or 4-star hotels are usually a great value. We're staying at an Airbnb ourselves in between West Lake and Old Quarter area (on Nguyen Truong To street) if you want to be close to us!</p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">How far in advance should I book my travel?</h3>
+          <p class="faq-answer">Book as early as possible! Hanoi is a popular destination, and flights and hotels can fill up quickly, especially during peak travel seasons. We recommend booking at least 2-3 months in advance for the best prices and availability.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">Things to do (+ food to eat)?</h3>
+          <p class="faq-answer"><strong>Getting Around:</strong> We recommend walking if you are in the Old Quarter (be mindful of the traffic!). For longer distances, <strong>Grab</strong> is widely used, or you can book <strong>Green SM</strong> which runs an entire fleet of Vietnamese EVs.<br><br>
+
+            <strong>Things to Do (+ Food to Eat):</strong><br>
+            Hà Nội sightseeing and food <a href="https://maps.app.goo.gl/yr5ovXspzvxmY2mm8">map</a><br>
+            Day / overnight trip to Hạ Long Bay<br>
+            Day / overnight trip to Ninh Bình<br>
+            Specialty coffee experience @ Sứ Quân Roastery
+          </p>
+        </div>
+
+        <div class="faq-image-wrapper" style="text-align: center; margin-top: 30px;">
+          <img src="../images/assets/roy-vietnam.jpg" 
+               alt="Roy in a random alleyway in Hanoi"
+               style="max-width: 100%; max-height: 500px; height: auto; border-radius: 16px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);">
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer-section">
+      <div class="contact-info">
+        <p>Questions? WhatsApp us!</p>
+      </div>
+    </section>
+
+  </div>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="../slick/slick.js"></script>
+  <script src="../app.js"></script>
+  <script src="../js/carousel.js"></script>
+
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-101943930-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  <!-- Fillout Form Script -->
+  <script src="https://server.fillout.com/embed/v1/"></script>
+
+  <!-- FAQ & Travel Collapsible Functionality -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // FAQ items
+      const faqItems = document.querySelectorAll('.faq-item');
+
+      faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+
+        question.addEventListener('click', function () {
+          // Close all other FAQ items
+          faqItems.forEach(otherItem => {
+            if (otherItem !== item) {
+              otherItem.classList.remove('active');
+            }
+          });
+
+          // Toggle current FAQ item
+          item.classList.toggle('active');
+        });
+      });
+
+      // Slide text expand/collapse functionality
+      const textWrappers = document.querySelectorAll('.slide-text-wrapper');
+
+      textWrappers.forEach(wrapper => {
+        const slide = wrapper.closest('.carousel-slide');
+        const overlay = slide.querySelector('.text-overlay');
+
+        // Click on wrapper to toggle
+        wrapper.addEventListener('click', function (e) {
+          e.stopPropagation();
+          const isExpanded = wrapper.classList.contains('expanded');
+
+          if (isExpanded) {
+            // Collapse
+            wrapper.classList.remove('expanded');
+            slide.classList.remove('text-expanded');
+          } else {
+            // Expand
+            wrapper.classList.add('expanded');
+            slide.classList.add('text-expanded');
+          }
+        });
+
+        // Click on overlay to collapse
+        if (overlay) {
+          overlay.addEventListener('click', function () {
+            wrapper.classList.remove('expanded');
+            slide.classList.remove('text-expanded');
+          });
+        }
+      });
+    });
+
+    // Navigation color change on scroll
+    window.addEventListener('scroll', function () {
+      const carousel = document.querySelector('.carousel-section');
+      const navContainer = document.querySelector('.top-nav-container');
+
+      if (carousel && navContainer) {
+        const carouselRect = carousel.getBoundingClientRect();
+
+        // Use viewport-based detection
+        if (carouselRect.bottom < 200) {
+          // Past the carousel - add dark class
+          navContainer.classList.add('nav-dark');
+        } else {
+          // In the carousel - remove dark class
+          navContainer.classList.remove('nav-dark');
+        }
+      }
+    });
+  </script>
+
+  <div id="confetti"></div>
+  <script type="text/javascript" src="../js/confetti.js"></script>
+
+</body>
+
+</html>
