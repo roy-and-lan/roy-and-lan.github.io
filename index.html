@@ -1,383 +1,230 @@
 <!doctype html>
-<html style="scroll-behavior: smooth;">
-
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="generator" content="Hugo 0.42.2" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Roy & Lan's Wedding</title>
   <meta name="description" content="December 12th, 2026 in Hanoi, Vietnam" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   
-  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Roy & Lan's Wedding">
   <meta property="og:description" content="December 12th, 2026 in Hanoi, Vietnam">
-  <meta property="og:image" content="https://roy-and-lan.github.io/images/assets/soho.jpg">
+  <meta property="og:image" content="https://roy-and-lan.github.io/images/assets/landing.jpg">
   <meta property="og:url" content="https://roy-and-lan.github.io/">
   
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Roy & Lan's Wedding">
   <meta name="twitter:description" content="December 12th, 2026 in Hanoi, Vietnam">
-  <meta name="twitter:image" content="https://roy-and-lan.github.io/images/assets/soho.jpg">
+  <meta name="twitter:image" content="https://roy-and-lan.github.io/images/assets/landing.jpg">
   
   <link rel="icon" type="image/png" href="images/assets/soho.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/main.css" />
-  
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --terracotta: #D77C67;
-      --warm-beige: #FBF8F6;
-      --dark-brown: #5B463D;
-      --soft-white: rgba(255, 255, 255, 0.95);
-      --glass-bg: rgba(255, 255, 255, 0.88);
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     
-    /* Floral background */
     body {
       background: url('images/assets/background.png') no-repeat center center fixed;
       background-size: cover;
+      font-family: 'Manrope', sans-serif;
       min-height: 100vh;
-      margin: 0;
-      padding: 0;
-      font-family: 'Inter', sans-serif;
-      color: var(--dark-brown);
-    }
-    
-    /* Position floral decorations to frame the card */
-    .floral-decoration {
-      position: fixed;
-      pointer-events: none;
-      z-index: 1;
-      opacity: 0;
-      transition: opacity 0.7s ease;
-    }
-    
-    .floral-top-left {
-      top: 10%;
-      left: 5%;
-      width: 250px;
-      height: 300px;
-      background: url('images/assets/party-left.png') no-repeat center;
-      background-size: contain;
-      animation: fadeIn 0.8s ease 0.2s forwards;
-    }
-    
-    .floral-top-right {
-      top: 8%;
-      right: 3%;
-      width: 220px;
-      height: 280px;
-      background: url('images/assets/party-right.png') no-repeat center;
-      background-size: contain;
-      animation: fadeIn 0.8s ease 0.3s forwards;
-    }
-    
-    .floral-bottom-left {
-      bottom: 15%;
-      left: 8%;
-      width: 200px;
-      height: 250px;
-      background: url('images/assets/party-left.png') no-repeat center;
-      background-size: contain;
-      opacity: 0.7;
-      animation: fadeIn 0.8s ease 0.5s forwards;
-    }
-    
-    .floral-bottom-right {
-      bottom: 12%;
-      right: 5%;
-      width: 240px;
-      height: 220px;
-      background: url('images/assets/party-right.png') no-repeat center;
-      background-size: contain;
-      opacity: 0.7;
-      animation: fadeIn 0.8s ease 0.6s forwards;
-    }
-    
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    
-    @keyframes slideUp {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(15px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    
-    /* Mobile image overrides */
-    @media (max-width: 768px) {
-      body {
-        background: url('images/assets/background_mobile.png') no-repeat center center fixed !important;
-        background-size: cover !important;
-      }
-      .floral-top-left {
-        background: url('images/assets/party-left_mobile.png') no-repeat center !important;
-        background-size: contain !important;
-      }
-      .floral-top-right {
-        background: url('images/assets/party-right_mobile.png') no-repeat center !important;
-        background-size: contain !important;
-      }
-      .floral-bottom-left {
-        background: url('images/assets/party-left_mobile.png') no-repeat center !important;
-        background-size: contain !important;
-      }
-      .floral-bottom-right {
-        background: url('images/assets/party-right_mobile.png') no-repeat center !important;
-        background-size: contain !important;
-      }
-    }
-    
-    /* Premium card */
-    .language-selector-container {
       display: flex;
-      justify-content: center;
       align-items: center;
-      min-height: 100vh;
-      padding: 2rem;
-      position: relative;
-      z-index: 10;
+      justify-content: center;
     }
     
-    .language-selector {
-      background: var(--glass-bg);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      border-radius: 24px;
-      padding: 3rem 3.5rem;
+    .landing-container {
+      max-width: 1000px;
+      padding: 40px 20px;
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 16px;
+      margin: 20px;
       text-align: center;
-      box-shadow: 0 20px 60px rgba(215, 124, 103, 0.15);
-      max-width: 580px;
-      width: 90%;
-      border: 1px solid rgba(215, 124, 103, 0.2);
-      animation: slideUp 0.8s ease 0.3s forwards;
     }
     
-    /* Typography */
-    .language-selector h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(2.5rem, 6vw, 3.5rem);
-      font-weight: 600;
-      color: var(--terracotta);
-      margin: 0 0 0.5rem;
-      letter-spacing: 1px;
-    }
-    
-    .language-selector .date {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(1rem, 2.5vw, 1.25rem);
-      color: var(--terracotta);
-      margin: 0 0 2rem;
-      letter-spacing: 3px;
-      font-weight: 400;
-    }
-    
-    .language-selector .welcome {
-      font-family: 'Inter', sans-serif;
-      font-size: clamp(1rem, 2.2vw, 1.15rem);
-      color: var(--dark-brown);
-      margin: 0 0 0.25rem;
-      font-weight: 400;
-      line-height: 1.5;
-    }
-    
-    .language-selector .welcome-vi {
-      font-family: 'Inter', sans-serif;
-      font-size: clamp(0.95rem, 2vw, 1.05rem);
-      color: var(--dark-brown);
-      margin: 0 0 2.5rem;
-      font-weight: 400;
-      opacity: 0.9;
-    }
-    
-    /* Full-width language buttons */
-    .lang-buttons {
+    /* Combined hero and content section */
+    .landing-card {
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 16px;
+      overflow: hidden;
       display: flex;
       flex-direction: column;
-      gap: 1rem;
+    }
+    
+    /* Full width horizontal image */
+    .landing-hero {
+      background: url('images/assets/landing.jpg') no-repeat center center;
+      background-size: cover;
       width: 100%;
+      height: 400px;
     }
     
-    .lang-button {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      text-decoration: none;
-      color: var(--dark-brown);
-      transition: all 0.3s ease;
-      padding: 1rem 1.5rem;
-      border-radius: 14px;
-      background: var(--soft-white);
-      border: 1px solid rgba(215, 124, 103, 0.15);
-      font-family: 'Inter', sans-serif;
-      font-size: clamp(0.95rem, 2vw, 1.1rem);
-      font-weight: 500;
-      opacity: 0;
+    .content-section {
+      padding: 30px 20px 25px;
     }
     
-    .lang-button:nth-child(1) {
-      animation: fadeInUp 0.6s ease 0.7s forwards;
+    .welcome-message {
+      font-family: 'Manrope', sans-serif;
+      font-size: 18px;
+      color: #5B463D;
+      margin-bottom: 20px;
+      opacity: 0.9;
+      font-style: italic;
     }
     
-    .lang-button:nth-child(2) {
-      animation: fadeInUp 0.6s ease 0.85s forwards;
-    }
-    
-    .lang-button:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 20px rgba(215, 124, 103, 0.25);
-      background: white;
-      border-color: rgba(215, 124, 103, 0.3);
-      text-decoration: none;
-    }
-    
-    .lang-button .flag {
-      font-size: 1.5rem;
-    }
-    
-    .lang-button .label {
-      flex: 1;
-      text-align: left;
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 42px;
+      color: #5B463D;
+      margin-bottom: 8px;
       letter-spacing: 0.5px;
     }
     
-    /* Personal touch */
-    .personal-touch {
-      margin-top: 2rem;
-      padding-top: 1.5rem;
-      border-top: 1px solid rgba(215, 124, 103, 0.15);
-      font-family: 'Inter', sans-serif;
-      font-size: clamp(0.85rem, 1.9vw, 0.95rem);
-      color: var(--dark-brown);
-      opacity: 0.85;
-      font-style: italic;
-      animation: fadeInUp 0.6s ease 1s forwards;
-      opacity: 0;
+    .date {
+      font-family: 'Manrope', sans-serif;
+      font-size: 18px;
+      color: #5B463D;
+      letter-spacing: 0.06em;
+      margin-bottom: 4px;
+      opacity: 0.9;
     }
     
-    /* Responsive */
+    .venue {
+      font-family: 'Manrope', sans-serif;
+      font-size: 15px;
+      color: #5B463D;
+      margin-bottom: 28px;
+      opacity: 0.85;
+    }
+    
+    .lang-buttons {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    
+    .lang-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      background: #fff;
+      border: 1px solid rgba(215, 124, 103, 0.2);
+      border-radius: 8px;
+      text-decoration: none;
+      color: #5B463D;
+      font-family: 'Manrope', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 8px rgba(215, 124, 103, 0.1);
+    }
+    
+    .lang-btn:hover {
+      background: #f8f5f2;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(215, 124, 103, 0.15);
+    }
+    
+    .lang-btn .flag {
+      font-size: 1.25rem;
+    }
+    
+    /* Mobile responsive */
     @media (max-width: 768px) {
-      .language-selector {
-        padding: 2.5rem 2rem;
-        max-width: 520px;
+      .landing-container {
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+        background: transparent;
       }
       
-      .language-selector h1 {
-        font-size: 2.2rem;
+      .landing-card {
+        border-radius: 0;
+        background: rgba(255, 255, 255, 0.9);
       }
       
-      .floral-top-left {
-        top: 8%;
-        left: 3%;
-        width: 180px;
+      .landing-hero {
+        height: 60vw;
+        min-height: 250px;
       }
       
-      .floral-top-right {
-        top: 6%;
-        right: 2%;
-        width: 160px;
+      .content-section {
+        padding: 20px 15px 20px;
       }
       
-      .floral-bottom-left {
-        bottom: 12%;
-        left: 5%;
-        width: 150px;
+      .welcome-message {
+        font-size: 16px;
+        margin-bottom: 16px;
       }
       
-      .floral-bottom-right {
-        bottom: 10%;
-        right: 3%;
-        width: 180px;
+      h1 {
+        font-size: 32px;
+      }
+      
+      .date {
+        font-size: 16px;
+      }
+      
+      .venue {
+        font-size: 13px;
+        margin-bottom: 20px;
+      }
+      
+      .lang-buttons {
+        flex-direction: column;
+        gap: 12px;
       }
     }
     
     @media (max-width: 480px) {
-      .language-selector {
-        padding: 2rem 1.5rem;
-        border-radius: 20px;
-        width: 94%;
+      .landing-hero {
+        height: 70vw;
       }
       
-      .language-selector h1 {
-        font-size: 1.8rem;
+      h1 {
+        font-size: 28px;
       }
       
-      .language-selector .date {
-        font-size: 1rem;
-        letter-spacing: 2px;
+      .date {
+        font-size: 14px;
       }
       
-      .floral-top-left,
-      .floral-top-right,
-      .floral-bottom-left,
-      .floral-bottom-right {
-        display: none;
+      .venue {
+        font-size: 12px;
       }
       
-      .lang-button {
-        padding: 1rem;
+      .welcome-message {
+        font-size: 14px;
       }
-    }
-    
-    /* Hide carousel navigation and dots from main.css */
-    .carousel-nav, .carousel-dots {
-      display: none !important;
     }
   </style>
 </head>
-
 <body>
-  <!-- Floral decorations -->
-  <div class="floral-decoration floral-top-left"></div>
-  <div class="floral-decoration floral-top-right"></div>
-  <div class="floral-decoration floral-bottom-left"></div>
-  <div class="floral-decoration floral-bottom-right"></div>
-  
-  <div class="language-selector-container">
-    <div class="language-selector">
-      <h1>ROY & LAN</h1>
-      <span class="subtitle">Select Your Language</span>
-      <!-- <span class="subtitle-vi">Vui lòng chọn ngôn ngữ</span> -->
+  <div class="landing-container">
+    <div class="landing-card">
+      <div class="landing-hero"></div>
       
-      <div class="lang-buttons">
-        <a href="en/" class="lang-button">
-          <span class="flag">🇬🇧</span>
-          <span class="label">English</span>
-        </a>
-        <a href="vn/" class="lang-button">
-          <span class="flag">🇻🇳</span>
-          <span class="label">Tiếng Việt</span>
-        </a>
+      <div class="content-section">
+        <p class="welcome-message">You're invited to our wedding in Hanoi!</p>
+        <h1>Roy & Lan</h1>
+        <p class="date">12 December 2026</p>
+        <p class="venue">Pan Pacific Hanoi, 1 Thanh Niên, Hanoi, Vietnam</p>
+        
+        <div class="lang-buttons">
+          <a href="en/" class="lang-btn">
+            <span class="flag">🇬🇧</span>
+            <span>English</span>
+          </a>
+          <a href="vn/" class="lang-btn">
+            <span class="flag">🇻🇳</span>
+            <span>Tiếng Việt</span>
+          </a>
+        </div>
       </div>
-      
-      <p class="personal-touch">We can't wait to celebrate with you.</p>
     </div>
   </div>
-
-  <div id="confetti"></div>
-  <script type="text/javascript" src="js/confetti.js"></script>
 </body>
-
 </html>
