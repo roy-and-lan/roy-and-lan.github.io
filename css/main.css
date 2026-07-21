@@ -1400,12 +1400,12 @@ a:hover {
 
   .carousel-slide[data-bg="images/assets/running.gif"],
   .carousel-slide[data-bg="../images/assets/running.gif"] {
-    background-image: url('../images/assets/running_mobile.gif') !important;
+    background-image: url('../images/assets/running.gif') !important;
   }
 
-  /* Mobile background and decorations */
+  /* Mobile background - use same background as desktop */
   .main-content {
-    background: url('../images/assets/background_mobile.png') no-repeat center center !important;
+    background: url('../images/assets/background.png') no-repeat center center !important;
     background-size: cover !important;
   }
 
