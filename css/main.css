@@ -1371,20 +1371,43 @@ a:hover {
 
 /* Mobile versions of carousel backgrounds */
 @media (max-width: 768px) {
-  .carousel-slide[data-bg="images/assets/cycling_goat.gif"] {
+  .carousel-slide[data-bg="images/assets/cycling_goat.gif"],
+  .carousel-slide[data-bg="../images/assets/cycling_goat.gif"] {
     background-image: url('../images/assets/cycling_goat_mobile.gif') !important;
   }
 
-  .carousel-slide[data-bg="images/assets/vietnam.gif"] {
+  .carousel-slide[data-bg="images/assets/vietnam.gif"],
+  .carousel-slide[data-bg="../images/assets/vietnam.gif"] {
     background-image: url('../images/assets/vietnam_mobile.jpg') !important;
   }
 
-  .carousel-slide[data-bg="images/assets/house.gif"] {
+  .carousel-slide[data-bg="images/assets/house.gif"],
+  .carousel-slide[data-bg="../images/assets/house.gif"] {
     background-image: url('../images/assets/house_mobile.png') !important;
   }
 
-  .carousel-slide[data-bg="images/assets/proposal.gif"] {
+  .carousel-slide[data-bg="images/assets/proposal.gif"],
+  .carousel-slide[data-bg="../images/assets/proposal.gif"] {
     background-image: url('../images/assets/proposal_mobile.jpg') !important;
+  }
+
+  .carousel-slide[data-bg="images/assets/running.gif"],
+  .carousel-slide[data-bg="../images/assets/running.gif"] {
+    background-image: url('../images/assets/running_mobile.gif') !important;
+  }
+
+  /* Mobile background and decorations */
+  .main-content {
+    background: url('../images/assets/background_mobile.png') no-repeat center center !important;
+    background-size: cover !important;
+  }
+
+  .watercolor-left {
+    background-image: url('../images/assets/party-left_mobile.png') !important;
+  }
+
+  .watercolor-right {
+    background-image: url('../images/assets/party-right_mobile.png') !important;
   }
 }
 
