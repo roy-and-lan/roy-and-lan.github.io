@@ -5,257 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Roy & Lan's Wedding</title>
   <meta name="description" content="December 12th, 2026 in Hanoi, Vietnam" />
-  
+
   <meta property="og:type" content="website">
   <meta property="og:title" content="Roy & Lan's Wedding">
   <meta property="og:description" content="December 12th, 2026 in Hanoi, Vietnam">
   <meta property="og:image" content="https://roy-and-lan.github.io/images/assets/landing.jpg">
   <meta property="og:url" content="https://roy-and-lan.github.io/">
-  
+
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Roy & Lan's Wedding">
   <meta name="twitter:description" content="December 12th, 2026 in Hanoi, Vietnam">
   <meta name="twitter:image" content="https://roy-and-lan.github.io/images/assets/landing.jpg">
-  
+
   <link rel="icon" type="image/png" href="images/assets/soho.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    
-    body {
-      background: url('images/assets/background.png') no-repeat center center fixed;
-      background-size: cover;
-      font-family: 'Manrope', sans-serif;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    
-    .landing-container {
-      max-width: 1000px;
-      padding: 40px 20px;
-      background: rgba(255, 255, 255, 0.85);
-      border-radius: 16px;
-      margin: 20px;
-      text-align: center;
-    }
-    
-    /* Combined hero and content section */
-    .landing-card {
-      background: rgba(255, 255, 255, 0.85);
-      border-radius: 16px;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-    }
-    
-    /* Full width horizontal image */
-    .landing-hero {
-      background: url('images/assets/landing.jpg') no-repeat center center;
-      background-size: cover;
-      width: 100%;
-      height: 320px;
-    }
-    
-    .content-section {
-      padding: 25px 20px 25px;
-    }
-    
-    .welcome-message {
-      font-family: 'Playfair Display', serif;
-      font-size: 20px;
-      font-weight: 400;
-      color: #5B463D;
-      margin-bottom: 12px;
-      line-height: 1.4;
-    }
-    
-    .names-container {
-      position: relative;
-      margin-bottom: 16px;
-    }
-    
-    .decorative-line {
-      width: 80px;
-      height: 1px;
-      background: linear-gradient(to right, #8B7355, #D4AF37, #8B7355);
-      margin: 0 auto;
-    }
-    
-    h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 48px;
-      font-weight: 500;
-      color: #5B463D;
-      margin: 12px 0;
-      letter-spacing: 1px;
-    }
-    
-    .date {
-      font-family: 'Playfair Display', serif;
-      font-size: 18px;
-      font-weight: 400;
-      color: #5B463D;
-      letter-spacing: 0.15em;
-      margin-bottom: 8px;
-    }
-    
-    .venue {
-      font-family: 'Manrope', sans-serif;
-      font-size: 15px;
-      color: #5B463D;
-      margin-bottom: 22px;
-      opacity: 0.85;
-    }
-    
-    .lang-buttons {
-      display: flex;
-      gap: 16px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    
-    .lang-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 12px 24px;
-      background: #fff;
-      border: 1px solid rgba(215, 124, 103, 0.2);
-      border-radius: 8px;
-      text-decoration: none;
-      color: #5B463D;
-      font-family: 'Manrope', sans-serif;
-      font-size: 14px;
-      font-weight: 500;
-      transition: all 0.2s ease;
-      box-shadow: 0 2px 8px rgba(215, 124, 103, 0.1);
-    }
-    
-    .lang-btn:hover {
-      background: #f8f5f2;
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(215, 124, 103, 0.15);
-    }
-    
-    .lang-btn .flag {
-      font-size: 1.25rem;
-    }
-    
-    /* Mobile responsive */
-    @media (max-width: 768px) {
-      .landing-container {
-        padding: 0;
-        margin: 0;
-        border-radius: 0;
-        background: transparent;
-      }
-      
-      .landing-card {
-        border-radius: 0;
-        background: rgba(255, 255, 255, 0.9);
-      }
-      
-      .landing-hero {
-        height: 60vw;
-        min-height: 250px;
-        background: url('images/assets/landing.jpg') no-repeat center center;
-        background-size: cover;
-      }
-      
-      .content-section {
-        padding: 20px 15px 20px;
-      }
-      
-      .welcome-message {
-        font-size: 16px;
-        margin-bottom: 8px;
-      }
-      
-      .names-container {
-        margin-bottom: 16px;
-      }
-      
-      .decorative-line {
-        width: 60px;
-      }
-      
-      h1 {
-        font-size: 32px;
-        margin: 10px 0;
-      }
-      
-      .date {
-        font-size: 16px;
-      }
-      
-      .venue {
-        font-size: 13px;
-        margin-bottom: 20px;
-      }
-      
-      .lang-buttons {
-        flex-direction: column;
-        gap: 12px;
-      }
-    }
-    
-    @media (max-width: 480px) {
-      .landing-hero {
-        height: 70vw;
-      }
-      
-      h1 {
-        font-size: 28px;
-      }
-      
-      .date {
-        font-size: 14px;
-      }
-      
-      .venue {
-        font-size: 12px;
-      }
-      
-      .welcome-message {
-        font-size: 14px;
-      }
-      
-      .decorative-line {
-        width: 50px;
-      }
-      
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-  <div class="landing-container">
+<body class="landing-page">
+  <main class="landing-container">
     <div class="landing-card">
-      <div class="landing-hero"></div>
-      
+      <div class="landing-hero"><img src="images/assets/landing.jpg" alt="Roy and Lan celebrating after a cycling adventure" width="3000" height="2000" fetchpriority="high"></div>
+
       <div class="content-section">
+
         <p class="welcome-message">You're invited to our wedding in Hanoi!</p>
         <div class="names-container">
-          <h1>Roy 💗 Lan</h1>
+          <h1>Roy <span class="name-heart" aria-label="and">💗</span> Lan</h1>
           <div class="decorative-line"></div>
         </div>
-        <p class="date">12 December 2026</p>
-        <p class="venue">Pan Pacific Hanoi, 1 Thanh Niên, Hà Nội, Việt Nam</p>
-        
+        <p class="date"><time datetime="2026-12-12">12 December 2026</time></p>
+        <p class="venue">Pan Pacific Hanoi<br><span>1 Thanh Niên, Hà Nội, Việt Nam</span></p>
+
         <div class="lang-buttons">
-          <a href="en/" class="lang-btn">
-            <span class="flag">🇬🇧</span>
-            <span>English</span>
+          <a href="en/" class="lang-btn" lang="en" hreflang="en">
+            <span class="flag" aria-hidden="true">🇬🇧</span>
+            <span>English</span><span aria-hidden="true">↗</span>
           </a>
-          <a href="vn/" class="lang-btn">
-            <span class="flag">🇻🇳</span>
-            <span>Tiếng Việt</span>
+          <a href="vn/" class="lang-btn" lang="vi" hreflang="vi">
+            <span class="flag" aria-hidden="true">🇻🇳</span>
+            <span>Tiếng Việt</span><span aria-hidden="true">↗</span>
           </a>
         </div>
       </div>
     </div>
-  </div>
+  </main>
 </body>
 </html>

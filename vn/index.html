@@ -1,171 +1,60 @@
 <!doctype html>
-<html style="scroll-behavior: smooth;">
+<html lang="vi">
 
 <head>
   <meta charset="utf-8">
-  <meta name="generator" content="Hugo 0.42.2" />
   <title> Đám cưới của Roy &amp; Lan </title>
   <meta name="description" content="Click để nhận thông tin nóng hổi về ngày cưới của Lan và Roy" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Đám cưới của Roy & Lan">
   <meta property="og:description" content="Kính mời bạn đến dự đám cưới của chúng tôi">
   <meta property="og:image" content="https://roy-and-lan.github.io/images/assets/soho.jpg">
   <meta property="og:url" content="https://roy-and-lan.github.io/vn/">
-  
+
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Đám cưới của Roy & Lan">
   <meta name="twitter:description" content="Kính mời bạn đến dự đám cưới của chúng tôi">
   <meta name="twitter:image" content="https://roy-and-lan.github.io/images/assets/soho.jpg">
-  
+
   <link rel="icon" type="image/png" href="../images/assets/soho.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;800;900&family=Dancing+Script:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="../css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
-  <link rel="stylesheet" href="../slick/slick.css" />
-  <link rel="stylesheet" href="../slick/slick-theme.css" />
   <link rel="stylesheet" href="../css/main.css" />
-  <style>
-    /* Font overrides for Vietnamese page */
-    html, body {
-      font-family: 'Manrope', sans-serif;
-    }
-    h1, h2, h3, h4, h5, h6 {
-      font-family: 'Cormorant Garamond', serif;
-      font-weight: 400;
-    }
-    
-    /* Tooltip styles for hover definitions */
-    .tooltip {
-      position: relative;
-      display: inline !important;
-      color: rgba(255, 255, 255, 0.7) !important;
-      background: none !important;
-      text-decoration: none !important;
-      cursor: help !important;
-      font-family: inherit !important;
-      font-weight: inherit !important;
-      font-size: inherit !important;
-      font-style: inherit !important;
-      line-height: inherit !important;
-      letter-spacing: inherit !important;
-      padding: 0 !important;
-      margin: 0 !important;
-      border: none !important;
-      border-radius: 0 !important;
-      text-shadow: inherit !important;
-      visibility: visible !important;
-      opacity: 1 !important;
-    }
-    
-    .tooltip:hover {
-      color: rgba(255, 255, 255, 0.9) !important;
-      background: none !important;
-      text-shadow: inherit !important;
-      font-family: inherit !important;
-      font-weight: inherit !important;
-      font-size: inherit !important;
-      font-style: inherit !important;
-    }
-    
-    .tooltip::after {
-      content: attr(data-tooltip);
-      position: absolute;
-      bottom: 140%;
-      left: 50%;
-      transform: translateX(-50%);
-      background-color: rgba(0, 0, 0, 0.95);
-      color: white;
-      padding: 10px 14px;
-      border-radius: 8px;
-      font-size: 14px;
-      font-weight: 400;
-      white-space: nowrap;
-      opacity: 0;
-      visibility: hidden;
-      transition: opacity 0.4s ease, visibility 0.4s ease;
-      z-index: 9999;
-      pointer-events: none;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      text-shadow: none;
-      min-width: 120px;
-      text-align: center;
-    }
-    
-    .tooltip::before {
-      content: '';
-      position: absolute;
-      bottom: 130%;
-      left: 50%;
-      transform: translateX(-50%);
-      border: 6px solid transparent;
-      border-top-color: rgba(0, 0, 0, 0.95);
-      opacity: 0;
-      visibility: hidden;
-      transition: opacity 0.4s ease, visibility 0.4s ease;
-      z-index: 9999;
-    }
-    
-    .tooltip:hover::after,
-    .tooltip:hover::before,
-    .tooltip:active::after,
-    .tooltip:active::before,
-    .tooltip:focus::after,
-    .tooltip:focus::before {
-      opacity: 1;
-      visibility: visible;
-    }
-    
-    /* Mobile touch support */
-    @media (hover: none) and (pointer: coarse) {
-      .tooltip {
-        -webkit-tap-highlight-color: transparent;
-      }
-      
-      .tooltip:active::after,
-      .tooltip:active::before {
-        opacity: 1 !important;
-        visibility: visible !important;
-      }
-    }
-    
-    /* Responsive tooltip positioning */
-    @media (max-width: 480px) {
-      .tooltip::after {
-        bottom: 130%;
-        font-size: 12px;
-        padding: 6px 10px;
-        max-width: 200px;
-        white-space: normal;
-      }
-    }
-  </style>
 </head>
 
 <body>
+  <a class="skip-link" href="#main-content">Đến nội dung chính</a>
+  <header class="site-header">
+    <nav class="top-nav-container" aria-label="Điều hướng chính">
 
-  <!-- Decorative watercolor elements -->
-  <div class="watercolor-decoration"></div>
-  <div class="watercolor-decoration"></div>
+        <div class="top-nav-left">
+          <a href="#timeline-section" class="nav-link">Chương trình</a>
+          <a href="#faq-section" class="nav-link">Hỏi đáp</a>
+        </div>
+        <div class="top-nav-right">
+          <a href="#rsvp-section" class="rsvp-button-overlay">Đăng ký</a>
+          <a href="../en/" class="lang-link" aria-label="English" lang="en" hreflang="en"><span aria-hidden="true">🇬🇧</span> EN</a>
+        </div>
+      </nav>
+  </header>
 
-  <div class="main-content">
+  <main id="main-content" class="main-content">
 
     <!-- Love Story Carousel -->
-    <section class="carousel-section">
+    <section class="carousel-section" tabindex="0" aria-roledescription="carousel" aria-label="Chuyện chúng mình">
       <div class="carousel-container">
         <div class="carousel-slide active" data-bg="../images/assets/running.gif">
           <div class="slide-content hero-style">
             <p class="invitation-text">Hẹn gặp bạn ở Hà Nội!</p>
-            <h1 class="couples-names">Roy & Lan</h1>
-            <p class="wedding-date">12 . 12 . 2026</p>
+            <h1 class="couples-names">Roy <span>&amp;</span> Lan</h1>
+            <p class="wedding-date"><time datetime="2026-12-12">12 . 12 . 2026</time></p>
             <p class="wedding-location">Pan Pacific Hanoi, 1 Thanh Niên, Hà Nội</p>
           </div>
         </div>
@@ -174,11 +63,10 @@
           <div class="text-overlay"></div>
           <div class="slide-content">
             <h2 class="slide-title">Nơi tình yêu bắt đầu</h2>
-            <div class="slide-text-wrapper"
-              data-full="Lan - Mình muốn tìm bạn đạp xe cùng lúc sắp chuyển sang Anh sống. (Tình cờ) lên Hinge, up tấm ảnh đạp ở Yosemite, Roy bấm like và nói 'thật gato, thế bình thường cậu có đi đua xe không?' Thế là hai đứa bắt đầu nói chuyện. Chung tôi theo dõi nhau trên Strava, vì phải đảm bảo ổng không nói dối và đạp xe thiệt. Ngày đầu hẹn ở London, hai đứa đi mua chipchip ở siêu thị để mang đi đạp xe xuống Brighton ngày tiếp theo.">
-              <p class="slide-text slide-text-preview">Lan - Mình muốn tìm bạn đạp xe cùng lúc sắp chuyển sang Anh sống. (Tình cờ) lên Hinge...<span
-                  class="slide-text-more"> đọc tiếp</span><span class="slide-text-toggle">+</span></p>
-              <p class="slide-text slide-text-full">Lan - Mình muốn tìm bạn đạp xe cùng lúc sắp chuyển sang Anh sống. (Tình cờ) lên Hinge, up tấm ảnh đạp ở Yosemite, Roy bấm like và nói 'thật gato, thế bình thường cậu có đi đua xe không?' Thế là hai đứa bắt đầu nói chuyện. Chung tôi theo dõi nhau trên Strava, vì phải đảm bảo ổng không nói dối và đạp xe thiệt. Ngày đầu hẹn ở London, hai đứa đi mua chipchip ở siêu thị để mang đi đạp xe xuống Brighton ngày tiếp theo.<span class="slide-text-toggle">-</span></p>
+            <div class="slide-text-wrapper">
+              <p class="slide-text slide-text-preview">Lan - Mình muốn tìm bạn đạp xe cùng lúc sắp chuyển sang Anh sống. (Tình cờ) lên Hinge...</p>
+              <p class="slide-text slide-text-full" id="story-1">Lan - Mình muốn tìm bạn đạp xe cùng lúc sắp chuyển sang Anh sống. (Tình cờ) lên Hinge, up tấm ảnh đạp ở Yosemite, Roy bấm like và nói 'thật gato, thế bình thường cậu có đi đua xe không?' Thế là hai đứa bắt đầu nói chuyện. Chung tôi theo dõi nhau trên Strava, vì phải đảm bảo ổng không nói dối và đạp xe thiệt. Ngày đầu hẹn ở London, hai đứa đi mua chipchip ở siêu thị để mang đi đạp xe xuống Brighton ngày tiếp theo.</p>
+              <button class="story-toggle" type="button" aria-expanded="false" aria-controls="story-1" data-open-label="Đọc tiếp câu chuyện" data-close-label="Thu gọn">Đọc tiếp câu chuyện <span aria-hidden="true">+</span></button>
             </div>
           </div>
         </div>
@@ -187,11 +75,10 @@
           <div class="text-overlay"></div>
           <div class="slide-content slide-content-right">
             <h2 class="slide-title">Cùng nhau phượt</h2>
-            <div class="slide-text-wrapper"
-              data-full="Roy - Tôi được đón tiếp nồng nhiệt bời gia đình và bạn bè của Lan tại Việt Nam. Một lần mẹ Lan chở tôi ngồi xe máy đằng sau đi mua bún chả ăn trưa. Cô ấy và người bán hàng đưa tôi sao mà rất nhiều túi, cầm hết cả hai tay, không còn tay nào bám đằng sau xe cho đỡ run 😅">
-              <p class="slide-text slide-text-preview">Roy - Tôi được đón tiếp nồng nhiệt bời gia đình và bạn bè của Lan tại Việt Nam...<span
-                  class="slide-text-more"> đọc tiếp</span><span class="slide-text-toggle">+</span></p>
-              <p class="slide-text slide-text-full">Roy - Roy được đón tiếp nồng nhiệt bời gia đình và bạn bè của Lan tại Việt Nam. Một lần mẹ Lan chở tôi ngồi xe máy đằng sau đi mua bún chả ăn trưa. Cô ấy và người bán hàng đưa tôi sao mà rất nhiều túi, cầm hết cả hai tay, không còn tay nào bám đằng sau xe cho đỡ run 😅<span class="slide-text-toggle">-</span></p>
+            <div class="slide-text-wrapper">
+              <p class="slide-text slide-text-preview">Roy - Tôi được đón tiếp nồng nhiệt bời gia đình và bạn bè của Lan tại Việt Nam...</p>
+              <p class="slide-text slide-text-full" id="story-2">Roy - Roy được đón tiếp nồng nhiệt bời gia đình và bạn bè của Lan tại Việt Nam. Một lần mẹ Lan chở tôi ngồi xe máy đằng sau đi mua bún chả ăn trưa. Cô ấy và người bán hàng đưa tôi sao mà rất nhiều túi, cầm hết cả hai tay, không còn tay nào bám đằng sau xe cho đỡ run 😅</p>
+              <button class="story-toggle" type="button" aria-expanded="false" aria-controls="story-2" data-open-label="Đọc tiếp câu chuyện" data-close-label="Thu gọn">Đọc tiếp câu chuyện <span aria-hidden="true">+</span></button>
             </div>
           </div>
         </div>
@@ -200,11 +87,10 @@
           <div class="text-overlay"></div>
           <div class="slide-content slide-content-right">
             <h2 class="slide-title">Túp lều tranh, hai trái tim vàng</h2>
-            <div class="slide-text-wrapper"
-              data-full="Lan - Tháng 9 năm 2024, hai đứa mua căn nhà đầu tiên của mình. Sau vài chục giờ lắp ráp nội thất và sơn lại các phòng, các loại khoan đục trên tường để trang trí, lâu đài nhỏ cuối cùng cũng hoàn thiện.">
-              <p class="slide-text slide-text-preview">Lan - Tháng 9 năm 2024, hai đứa mua căn nhà đầu tiên của mình....<span
-                  class="slide-text-more"> đọc tiếp</span><span class="slide-text-toggle">+</span></p>
-              <p class="slide-text slide-text-full">Lan - Tháng 9 năm 2024, hai đứa mua căn nhà đầu tiên của mình. Sau vài chục giờ lắp ráp nội thất và sơn lại các phòng, vài chục vết khoan lâu đài nhỏ cuối cùng cũng hoàn thiện. <span class="slide-text-toggle">-</span></p>
+            <div class="slide-text-wrapper">
+              <p class="slide-text slide-text-preview">Lan - Tháng 9 năm 2024, hai đứa mua căn nhà đầu tiên của mình....</p>
+              <p class="slide-text slide-text-full" id="story-3">Lan - Tháng 9 năm 2024, hai đứa mua căn nhà đầu tiên của mình. Sau vài chục giờ lắp ráp nội thất và sơn lại các phòng, vài chục vết khoan lâu đài nhỏ cuối cùng cũng hoàn thiện. </p>
+              <button class="story-toggle" type="button" aria-expanded="false" aria-controls="story-3" data-open-label="Đọc tiếp câu chuyện" data-close-label="Thu gọn">Đọc tiếp câu chuyện <span aria-hidden="true">+</span></button>
             </div>
           </div>
         </div>
@@ -213,51 +99,41 @@
           <div class="text-overlay"></div>
           <div class="slide-content">
             <h2 class="slide-title">Lời Cầu Hôn</h2>
-            <div class="slide-text-wrapper"
-              data-full="Roy - Tôi muốn cầu hôn vào một trong những ngày khó nhất của Tour du Mont Blanc, và trên đỉnh một ngọn núi cao để làm cho lời cầu hôn thêm hoành tráng. Cuối cùng chúng tôi đến một đỉnh núi cực to trên vạch thung lũng, tôi nói với Lan muốn dừng lại nghỉ chân chút. Lan lập tức ngồi xuống và lấy bánh mì ra ăn. Tôi nói cô ấy cất bánh mì đi, đứng lên lại giúp, rồi mới quỳ gối và cầu hôn. Tôi vừa lo và vừa háo hức, quỳ gối xuống rõ đau sau một tuần leo núi, nhưng tôi biết rằng tôi muốn dành trọn cuộc đời của mình với cô ấy!">
-              <p class="slide-text slide-text-preview">Roy - Tôi muốn cầu hôn vào một trong những ngày khó nhất...<span
-                  class="slide-text-more"> đọc tiếp</span><span class="slide-text-toggle">+</span></p>
-              <p class="slide-text slide-text-full">Roy - Tôi muốn cầu hôn vào một trong những ngày khó nhất của Tour du Mont Blanc, và trên đỉnh một ngọn núi cao để làm cho lời cầu hôn thêm hoành tráng. Cuối cùng chúng tôi đến đỉnh núi cực to trên vạch thung lũng, tôi nói với Lan muốn dừng lại nghỉ chân chút. Lan lập tức ngồi xuống và lấy bánh mì ra ăn. Tôi nói cô ấy cất bánh mì đi, đứng lên lại giúp, rồi mới quỳ gối và cầu hôn. Tôi vừa lo và vừa háo hức, quỳ gối xuống rõ đau sau một tuần leo núi, nhưng tôi biết rằng tôi muốn dành trọn cuộc đời của mình với cô ấy!<span class="slide-text-toggle">-</span></p>
+            <div class="slide-text-wrapper">
+              <p class="slide-text slide-text-preview">Roy - Tôi muốn cầu hôn vào một trong những ngày khó nhất...</p>
+              <p class="slide-text slide-text-full" id="story-4">Roy - Tôi muốn cầu hôn vào một trong những ngày khó nhất của Tour du Mont Blanc, và trên đỉnh một ngọn núi cao để làm cho lời cầu hôn thêm hoành tráng. Cuối cùng chúng tôi đến đỉnh núi cực to trên vạch thung lũng, tôi nói với Lan muốn dừng lại nghỉ chân chút. Lan lập tức ngồi xuống và lấy bánh mì ra ăn. Tôi nói cô ấy cất bánh mì đi, đứng lên lại giúp, rồi mới quỳ gối và cầu hôn. Tôi vừa lo và vừa háo hức, quỳ gối xuống rõ đau sau một tuần leo núi, nhưng tôi biết rằng tôi muốn dành trọn cuộc đời của mình với cô ấy!</p>
+              <button class="story-toggle" type="button" aria-expanded="false" aria-controls="story-4" data-open-label="Đọc tiếp câu chuyện" data-close-label="Thu gọn">Đọc tiếp câu chuyện <span aria-hidden="true">+</span></button>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Navigation -->
-      <div class="carousel-nav">
-        <button class="nav-btn prev-btn" onclick="changeSlide(-1)">‹</button>
-        <button class="nav-btn next-btn" onclick="changeSlide(1)">›</button>
-      </div>
-
-      <!-- Dots indicator -->
-      <div class="carousel-dots">
-        <span class="dot active" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
-      </div>
-
-      <!-- Top Navigation (Desktop Only) -->
-      <div class="top-nav-container">
-        <div class="top-nav-left">
-          <a href="#timeline-section" class="nav-link">Chương trình</a>
-          <a href="#faq-section" class="nav-link">Hỏi đáp</a>
+      <div class="story-controls">
+        <p class="story-index sr-only" aria-live="polite">01 / 05</p>
+        <div class="carousel-dots" aria-label="Chọn câu chuyện">
+          <button class="dot active" type="button" data-slide="0" aria-label="Roy &amp; Lan" aria-pressed="true"></button>
+          <button class="dot" type="button" data-slide="1" aria-label="Nơi tình yêu bắt đầu" aria-pressed="false"></button>
+          <button class="dot" type="button" data-slide="2" aria-label="Cùng nhau phượt" aria-pressed="false"></button>
+          <button class="dot" type="button" data-slide="3" aria-label="Túp lều tranh, hai trái tim vàng" aria-pressed="false"></button>
+          <button class="dot" type="button" data-slide="4" aria-label="Lời Cầu Hôn" aria-pressed="false"></button>
         </div>
-        <div class="top-nav-right">
-          <a href="#rsvp-section" class="rsvp-button-overlay">Đăng ký</a>
-          <a href="../en/" class="lang-link" style="margin-left: 15px; color: rgba(255,255,255,0.9); text-decoration: none; font-size: 24px;">🇬🇧</a>
+        <div class="carousel-nav">
+          <button class="nav-btn prev-btn" type="button" aria-label="Câu chuyện trước">‹</button>
+          <button class="nav-btn next-btn" type="button" aria-label="Câu chuyện tiếp theo">›</button>
         </div>
       </div>
 
-      <!-- Particle effects background -->
-      <div class="particles"></div>
     </section>
 
     <!-- Order of the Day -->
     <section id="timeline-section" class="order-of-day-section">
       <div class="order-container">
-        <h2 class="order-title">Chương Trình</h2>
+        <div class="section-heading">
+
+          <h2 class="order-title">Chương Trình</h2>
+
+          <p class="section-date">12.12.2026 <span aria-hidden="true">♡</span> Hà Nội</p>
+        </div>
 
         <div class="timeline">
           <div class="timeline-item">
@@ -296,6 +172,7 @@
 
     <!-- RSVP Section -->
     <section id="rsvp-section" class="rsvp-section">
+
       <h2 class="rsvp-title">Đăng ký tham dự</h2>
       <p class="rsvp-subtitle">Vui lòng cho chúng tôi biết nếu bạn sẽ tham dự ngày đặc biệt của chúng tôi ❤️</p>
 
@@ -303,55 +180,58 @@
         <div style="width:100%;height:500px;" data-fillout-id="e3n5HTzwH1us" data-fillout-embed-type="standard"
           data-fillout-inherit-parameters data-fillout-dynamic-resize></div>
       </div>
+      <p class="rsvp-deadline">Vui lòng đăng ký trước ngày 12/11/2026 · <a href="https://forms.fillout.com/t/e3n5HTzwH1us" target="_blank" rel="noopener">Mở đơn đăng ký ↗</a></p>
     </section>
 
     <!-- FAQ Section -->
     <section id="faq-section" class="faq-section">
-      <h2 class="faq-title">Hỏi Đáp</h2>
+      <div class="section-heading">
+
+        <h2 class="faq-title">Hỏi Đáp</h2>
+
+      </div>
 
       <div class="faq-container">
-        <div class="faq-item">
-          <h3 class="faq-question">Lúc nào là hạn cuối đăng ký?</h3>
+        <details class="faq-item" name="questions">
+          <summary class="faq-question">Lúc nào là hạn cuối đăng ký?</summary>
           <p class="faq-answer">Vui lòng đăng ký cho bạn và người đi cùng trước 12/11/2026!</p>
-        </div>
+        </details>
 
-        <div class="faq-item">
-          <h3 class="faq-question">Mình nên mặc gì?</h3>
+        <details class="faq-item" name="questions">
+          <summary class="faq-question">Mình nên mặc gì?</summary>
           <p class="faq-answer">Trang phục lịch sự, kiêu sa và thoải mái, đặc biệt nếu có bộ nào màu hồng/đỏ/cam đề nghị bạn diện ngay lập tức! Màu trắng và ngà dành riêng cho cô dâu.</p>
-        </div>
+        </details>
 
-        <div class="faq-item">
-          <h3 class="faq-question">Có món chay hay ăn kiêng cho mình không?</h3>
+        <details class="faq-item" name="questions">
+          <summary class="faq-question">Có món chay hay ăn kiêng cho mình không?</summary>
           <p class="faq-answer">Tất nhiên là có! Lúc điền đơn, vui lòng cho chúng tôi biết nếu bạn có nhu cầu ăn gì cần lưu ý.</p>
-        </div>
+        </details>
 
-        <div class="faq-item">
-          <h3 class="faq-question">Nên đến lúc mấy giờ?</h3>
+        <details class="faq-item" name="questions">
+          <summary class="faq-question">Nên đến lúc mấy giờ?</summary>
           <p class="faq-answer">Vui lòng đến trước 10.30 ở Pan Pacific, nhớ đi sớm chút vì Hà Nội rất dễ tắc đường, và Lan không thích cao su. Nếu bạn muốn dự lễ ăn hỏi, liên lạc trực tiếp với chúng tôi/bố mẹ Lan! Nhà cô dâu cách khách sạn chỉ 5 phút đi bộ.</p>
-        </div>
+        </details>
 
-        <div class="faq-item">
-          <h3 class="faq-question">Muốn tặng quà thì làm thế nào?</h3>
+        <details class="faq-item" name="questions">
+          <summary class="faq-question">Muốn tặng quà thì làm thế nào?</summary>
           <p class="faq-answer">Hai chúng mình ít khi về Việt Nam, nên có mọi người đến dự là vui lắm rồi, không cần quà cáp gì hết. Ở tiệc cưới sẽ có một hòm nhận thiệp nếu ai văn hay hay hay văn có thể thả thiệp vào đó.</p>
-        </div>
+        </details>
 
       </div>
     </section>
 
     <!-- Footer -->
-    <section class="footer-section">
+    <footer class="footer-section">
+      <p class="footer-names">Roy <span>♡</span> Lan</p>
+      <p class="eyebrow">12.12.2026 · Hà Nội</p>
       <div class="contact-info">
         <p>Có câu hỏi gì, vui lòng nhắn gia đình Lan/Lan!</p>
       </div>
-    </section>
+    </footer>
 
-  </div>
+  </main>
 
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="../slick/slick.js"></script>
-  <script src="../app.js"></script>
-  <script src="../js/carousel.js"></script>
+  <script src="../js/carousel.js" defer></script>
 
   <script>
     (function (i, s, o, g, r, a, m) {
@@ -365,93 +245,7 @@
   </script>
 
   <!-- Fillout Form Script -->
-  <script src="https://server.fillout.com/embed/v1/"></script>
-
-  <!-- FAQ Collapsible Functionality -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const faqItems = document.querySelectorAll('.faq-item');
-
-      faqItems.forEach(item => {
-        const question = item.querySelector('.faq-question');
-
-        question.addEventListener('click', function () {
-          // Close all other FAQ items
-          faqItems.forEach(otherItem => {
-            if (otherItem !== item) {
-              otherItem.classList.remove('active');
-            }
-          });
-
-          // Toggle current FAQ item
-          item.classList.toggle('active');
-        });
-      });
-
-      // Slide text expand/collapse functionality
-      const textWrappers = document.querySelectorAll('.slide-text-wrapper');
-
-      textWrappers.forEach(wrapper => {
-        const slide = wrapper.closest('.carousel-slide');
-        const overlay = slide.querySelector('.text-overlay');
-
-        // Click on wrapper to toggle
-        wrapper.addEventListener('click', function (e) {
-          e.stopPropagation();
-          const isExpanded = wrapper.classList.contains('expanded');
-
-          if (isExpanded) {
-            // Collapse
-            wrapper.classList.remove('expanded');
-            slide.classList.remove('text-expanded');
-          } else {
-            // Expand
-            wrapper.classList.add('expanded');
-            slide.classList.add('text-expanded');
-          }
-        });
-
-        // Click on overlay to collapse
-        if (overlay) {
-          overlay.addEventListener('click', function () {
-            wrapper.classList.remove('expanded');
-            slide.classList.remove('text-expanded');
-          });
-        }
-      });
-    });
-
-    // Navigation color change on scroll
-    window.addEventListener('scroll', function () {
-      const carousel = document.querySelector('.carousel-section');
-      const navContainer = document.querySelector('.top-nav-container');
-
-      if (carousel && navContainer) {
-        const carouselRect = carousel.getBoundingClientRect();
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-        // Debug: log values to console
-        console.log('Scroll position:', scrollTop);
-        console.log('Carousel bottom:', carousel.offsetTop + carousel.offsetHeight);
-        console.log('Carousel rect bottom:', carouselRect.bottom);
-
-        // Use viewport-based detection instead
-        if (carouselRect.bottom < 200) {
-          // Past the carousel - add dark class
-          navContainer.classList.add('nav-dark');
-          console.log('Added nav-dark class');
-        } else {
-          // In the carousel - remove dark class
-          navContainer.classList.remove('nav-dark');
-          console.log('Removed nav-dark class');
-        }
-      }
-    });
-  </script>
-
-  <div id="confetti"></div>
-  <script type="text/javascript" src="../js/confetti.js"></script>
-
+  <script src="https://server.fillout.com/embed/v1/" defer></script>
 </body>
 
 </html>
